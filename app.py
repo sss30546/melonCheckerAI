@@ -106,6 +106,8 @@ def คงเหลือก่อนเน่าเสีย(วันที่
     return คงเหลือ
     
 def main():
+    # 🎨 ใส่โลโก้ทีม
+    st.image("IMG_8711.jpg", width=150)
     # 🖼️ ตั้งค่าหน้าและธีมสี
     st.markdown("""
         <style>
