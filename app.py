@@ -27,10 +27,10 @@ def คำนวณวันคงเหลือ(จำนวนวันที
 # ฟังก์ชันแชตกับ Groq
 def chatboot(question):
     system_prompt = """ 
-คุณคือผู้เชี่ยวชาญการจำแนกความสุกของเมล่อน... (ขอย่อไว้ในตัวอย่างนะครับ แต่คุณสามารถใส่ system_prompt เต็มได้เหมือนเดิม)
+คุณคือผู้เชี่ยวชาญการจำแนกความสุกของเมล่อน... 
 """
     response = client.chat.completions.create(
-        model="llama3-8b-8192",  # ✅ แก้ตรงนี้
+        model="llama3-8b-8192", 
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": question},
